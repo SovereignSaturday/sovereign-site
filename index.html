@@ -1,11 +1,10 @@
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Sovereign Saturday | College Football Concierge</title>
-  <meta name="description" content="The Sovereign Saturday is a private college football concierge delivering invitation‑only access to the regular season, CFP Playoffs, and National Championship." />
+  <meta name="description" content="The Sovereign Saturday is a private college football concierge delivering invitation-only access to the regular season, CFP Playoffs, and National Championship." />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -25,7 +24,6 @@
       color: var(--white);
     }
 
-    /* Hero Background – Private Suite Authority */
     .hero-wrap {
       position: relative;
       min-height: 92vh;
@@ -100,14 +98,29 @@
       font-family: 'Playfair Display', serif;
       font-size: clamp(2.8rem, 5vw, 4.6rem);
       line-height: 1.05;
-      margin-bottom: 1.3rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .tier-hero {
+      max-width: 760px;
+      margin: 0 auto 1.8rem;
+      font-size: 1.1rem;
+      color: var(--white);
+      font-weight: 300;
     }
 
     .hero p {
       max-width: 760px;
-      margin: 0 auto 2rem;
+      margin: 0 auto 1.6rem;
       font-size: 1.2rem;
       color: #d1d5db;
+    }
+
+    .form-qualifier {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 0.8rem;
     }
 
     .cta-form {
@@ -115,7 +128,7 @@
       gap: 1rem;
       flex-wrap: wrap;
       justify-content: center;
-      margin-top: 1.5rem;
+      margin-top: 0.5rem;
     }
 
     .cta-form input, .cta-form textarea {
@@ -140,6 +153,13 @@
       border-radius: 0.6rem;
       cursor: pointer;
       letter-spacing: .08em;
+    }
+
+    .cta-note {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.6rem;
     }
 
     .cta-form button::after {
@@ -230,24 +250,38 @@
       </header>
 
       <div class="hero">
-        <div class="limited">Invitation‑Only College Football Concierge</div>
+        <div class="limited">Invitation-Only College Football Concierge</div>
         <div class="scarcity">A Private Roster, Strictly Limited</div>
+
         <h1>College Football,<br/>Handled at the Highest Level</h1>
+
+        <div class="tier-hero">
+          Reserved for a small number of members who prefer college football without compromise.
+        </div>
+
         <p>
           The Sovereign Saturday is a private concierge dedicated exclusively to
           college football’s regular season, the College Football Playoff, and
           the National Championship. Travel, access, seating, and execution—
-          orchestrated with absolute precision.
+          orchestrated with absolute precision. Membership is intentionally limited and structured for families accustomed to premium hospitality environments.
         </p>
+
+        <div class="form-qualifier">
+          We work with a limited number of member families each season to ensure exceptional service.
+        </div>
 
         <form class="cta-form" id="contact-form">
           <input type="text" name="full_name" placeholder="Full Name" required />
           <input type="email" name="email" placeholder="Private Email" required />
           <input type="text" name="university" placeholder="Preferred University" />
           <input type="text" name="city" placeholder="Primary Travel City" />
-          <textarea name="coverage" rows="3" placeholder="Are you exploring half‑season coverage, full‑season coverage, or postseason coverage this year?"></textarea>
+          <textarea name="coverage" rows="3" placeholder="Are you exploring half-season coverage, full-season coverage, or postseason coverage this year?"></textarea>
           <button type="submit">Request Private Invitation</button>
         </form>
+
+        <div class="cta-note">
+          Limited memberships available for the upcoming season.
+        </div>
 
         <script>
         document.getElementById("contact-form").addEventListener("submit", function(e){
@@ -279,11 +313,11 @@
         <div class="card">
           <h3>Playoff & Championship Access</h3>
           <p>
-            The full College Football Playoff experience—on‑campus first‑round games, quarterfinals, semifinals, and the CFP National Championship—delivered with priority access, premium credentials, and flawless logistics.
+            The full College Football Playoff experience—on-campus first-round games, quarterfinals, semifinals, and the CFP National Championship—delivered with priority access, premium credentials, and flawless logistics.
           </p>
         </div>
         <div class="card">
-          <h3>White‑Glove Execution</h3>
+          <h3>White-Glove Execution</h3>
           <p>
             From arrival to final whistle, every detail is managed discreetly so
             your only responsibility is enjoying the game.
@@ -292,8 +326,6 @@
       </div>
     </section>
   </div>
-
-    
 
   <footer>
     <p><span>The Sovereign Saturday</span> • Private College Football Concierge • Founding Memberships Limited</p>
