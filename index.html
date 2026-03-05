@@ -1,335 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Sovereign Saturday | College Football Concierge</title>
-  <meta name="description" content="The Sovereign Saturday is a private college football concierge delivering invitation-only access to the regular season, CFP Playoffs, and National Championship." />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-dark: #0b0b0b;
-      --bg-card: #171717;
-      --gold: #c9a24d;
-      --muted: #9ca3af;
-      --white: #f9fafb;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Sovereign Saturday | College Football Concierge</title>
 
-    * { box-sizing: border-box; }
+<meta name="description" content="The Sovereign Saturday is a private college football concierge delivering invitation-only access to the regular season, CFP Playoffs, and National Championship." />
 
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: var(--bg-dark);
-      color: var(--white);
-    }
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-    .hero-wrap {
-      position: relative;
-      min-height: 92vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      background-image: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.75)),
-        url('https://i.imgur.com/xN9PtkY.png');
-      background-size: cover;
-      background-position: center;
-    }
+<!-- META PIXEL -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
 
-    .container {
-      max-width: 1150px;
-      margin: 0 auto;
-      padding: 2.5rem 1.5rem 5rem;
-    }
+fbq('init', '1574661046191612');
+fbq('track', 'PageView');
+</script>
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1574661046191612&ev=PageView&noscript=1"/>
+</noscript>
+<!-- END META PIXEL -->
 
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 0.7rem;
-      font-family: 'Playfair Display', serif;
-      font-size: 1.6rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-    }
+<style>
 
-    .logo svg {
-      width: 34px;
-      height: 34px;
-      fill: var(--gold);
-    }
+:root {
+--bg-dark: #0b0b0b;
+--bg-card: #171717;
+--gold: #c9a24d;
+--muted: #9ca3af;
+--white: #f9fafb;
+}
 
-    .badge {
-      border: 1px solid var(--gold);
-      color: var(--gold);
-      padding: 0.45rem 1rem;
-      border-radius: 999px;
-      font-size: 0.75rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-    }
+* { box-sizing: border-box; }
 
-    .hero {
-      text-align: center;
-      margin-top: 7rem;
-    }
+body {
+margin: 0;
+font-family: 'Inter', sans-serif;
+background: var(--bg-dark);
+color: var(--white);
+}
 
-    .limited {
-      margin-bottom: 0.8rem;
-      letter-spacing: .22em;
-      text-transform: uppercase;
-      color: var(--gold);
-      font-size: .75rem;
-    }
+.hero-wrap {
+position: relative;
+min-height: 92vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+background-image: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.75)),
+url('https://i.imgur.com/xN9PtkY.png');
+background-size: cover;
+background-position: center;
+}
 
-    .scarcity {
-      font-size: .85rem;
-      color: #d4af37;
-      margin-bottom: 2rem;
-      letter-spacing: .08em;
-    }
+.container {
+max-width: 1150px;
+margin: 0 auto;
+padding: 2.5rem 1.5rem 5rem;
+}
 
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2.8rem, 5vw, 4.6rem);
-      line-height: 1.05;
-      margin-bottom: 0.8rem;
-    }
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
 
-    .tier-hero {
-      max-width: 760px;
-      margin: 0 auto 1.8rem;
-      font-size: 1.1rem;
-      color: var(--white);
-      font-weight: 300;
-    }
+.logo {
+display: flex;
+align-items: center;
+gap: 0.7rem;
+font-family: 'Playfair Display', serif;
+font-size: 1.6rem;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+}
 
-    .hero p {
-      max-width: 760px;
-      margin: 0 auto 1.6rem;
-      font-size: 1.2rem;
-      color: #d1d5db;
-    }
+.logo svg {
+width: 34px;
+height: 34px;
+fill: var(--gold);
+}
 
-    .form-qualifier {
-      text-align: center;
-      font-size: 0.9rem;
-      color: var(--muted);
-      margin-bottom: 0.8rem;
-    }
+.badge {
+border: 1px solid var(--gold);
+color: var(--gold);
+padding: 0.45rem 1rem;
+border-radius: 999px;
+font-size: 0.75rem;
+letter-spacing: 0.14em;
+text-transform: uppercase;
+}
 
-    .cta-form {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 0.5rem;
-    }
+.hero {
+text-align: center;
+margin-top: 7rem;
+}
 
-    .cta-form input, .cta-form textarea {
-      background: rgba(17,17,17,.95);
-      border: 1px solid #2a2a2a;
-      color: var(--white);
-      padding: 1rem 1.1rem;
-      border-radius: 0.6rem;
-      min-width: 260px;
-    }
+.limited {
+margin-bottom: 0.8rem;
+letter-spacing: .22em;
+text-transform: uppercase;
+color: var(--gold);
+font-size: .75rem;
+}
 
-    .cta-form textarea { min-width: 100%; }
+.scarcity {
+font-size: .85rem;
+color: #d4af37;
+margin-bottom: 2rem;
+letter-spacing: .08em;
+}
 
-    .cta-form button {
-      position: relative;
-      overflow: hidden;
-      background: linear-gradient(135deg, #e0bd6a, #b08a3c);
-      border: none;
-      color: #111;
-      padding: 1rem 1.9rem;
-      font-weight: 600;
-      border-radius: 0.6rem;
-      cursor: pointer;
-      letter-spacing: .08em;
-    }
+.hero h1 {
+font-family: 'Playfair Display', serif;
+font-size: clamp(2.8rem, 5vw, 4.6rem);
+line-height: 1.05;
+margin-bottom: 0.8rem;
+}
 
-    .cta-note {
-      text-align: center;
-      font-size: 0.85rem;
-      color: var(--muted);
-      margin-top: 0.6rem;
-    }
+.tier-hero {
+max-width: 760px;
+margin: 0 auto 1.8rem;
+font-size: 1.1rem;
+color: var(--white);
+font-weight: 300;
+}
 
-    .cta-form button::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -75%;
-      width: 50%;
-      height: 100%;
-      background: linear-gradient(120deg, transparent, rgba(255,255,255,.45), transparent);
-      transform: skewX(-20deg);
-      animation: shimmer 3s infinite;
-    }
+.hero p {
+max-width: 760px;
+margin: 0 auto 1.6rem;
+font-size: 1.2rem;
+color: #d1d5db;
+}
 
-    @keyframes shimmer {
-      0% { left: -75%; }
-      100% { left: 125%; }
-    }
+.form-qualifier {
+text-align: center;
+font-size: 0.9rem;
+color: var(--muted);
+margin-bottom: 0.8rem;
+}
 
-    .main {
-      padding: 5rem 1.5rem;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
+.cta-form {
+display: flex;
+gap: 1rem;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 0.5rem;
+}
 
-    .section {
-      margin-bottom: 5rem;
-      text-align: center;
-    }
+.cta-form input,
+.cta-form textarea {
+background: rgba(17,17,17,.95);
+border: 1px solid #2a2a2a;
+color: var(--white);
+padding: 1rem 1.1rem;
+border-radius: 0.6rem;
+min-width: 260px;
+}
 
-    .section h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.4rem;
-      margin-bottom: 2rem;
-    }
+.cta-form textarea {
+min-width: 100%;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.6rem;
-      text-align: left;
-    }
+.cta-form button {
+position: relative;
+overflow: hidden;
+background: linear-gradient(135deg, #e0bd6a, #b08a3c);
+border: none;
+color: #111;
+padding: 1rem 1.9rem;
+font-weight: 600;
+border-radius: 0.6rem;
+cursor: pointer;
+letter-spacing: .08em;
+}
 
-    .card {
-      background: linear-gradient(180deg, #1b1b1b, #111);
-      padding: 2.2rem;
-      border-radius: 1.1rem;
-      border: 1px solid #242424;
-    }
+.cta-note {
+text-align: center;
+font-size: 0.85rem;
+color: var(--muted);
+margin-top: 0.6rem;
+}
 
-    .card h3 {
-      margin-top: 0;
-      margin-bottom: 0.7rem;
-      font-size: 1.05rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--gold);
-    }
+.main {
+padding: 5rem 1.5rem;
+max-width: 1100px;
+margin: 0 auto;
+}
 
-    .card p {
-      color: var(--muted);
-      line-height: 1.65;
-    }
+.section {
+margin-bottom: 5rem;
+text-align: center;
+}
 
-    footer {
-      text-align: center;
-      padding: 3rem 1rem 4rem;
-      border-top: 1px solid #242424;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
+.section h2 {
+font-family: 'Playfair Display', serif;
+font-size: 2.4rem;
+margin-bottom: 2rem;
+}
 
-    footer span { color: var(--gold); }
-  </style>
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+gap: 1.6rem;
+text-align: left;
+}
+
+.card {
+background: linear-gradient(180deg, #1b1b1b, #111);
+padding: 2.2rem;
+border-radius: 1.1rem;
+border: 1px solid #242424;
+}
+
+.card h3 {
+margin-top: 0;
+margin-bottom: 0.7rem;
+font-size: 1.05rem;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+color: var(--gold);
+}
+
+.card p {
+color: var(--muted);
+line-height: 1.65;
+}
+
+footer {
+text-align: center;
+padding: 3rem 1rem 4rem;
+border-top: 1px solid #242424;
+color: var(--muted);
+font-size: 0.9rem;
+}
+
+footer span {
+color: var(--gold);
+}
+
+</style>
 </head>
+
 <body>
 
-  <section class="hero-wrap">
-    <div class="container">
-      <header>
-        <div class="logo">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 2L15 8H9L12 2ZM4 10H20L17 22H7L4 10Z"/>
-          </svg>
-          The Sovereign Saturday
-        </div>
-        <div class="badge">Private Launch</div>
-      </header>
+<section class="hero-wrap">
 
-      <div class="hero">
-        <div class="limited">Invitation-Only College Football Concierge</div>
-        <div class="scarcity">A Private Roster, Strictly Limited</div>
+<div class="container">
 
-        <h1>College Football,<br/>Handled at the Highest Level</h1>
+<header>
+<div class="logo">
+<svg viewBox="0 0 24 24">
+<path d="M12 2L15 8H9L12 2ZM4 10H20L17 22H7L4 10Z"/>
+</svg>
+The Sovereign Saturday
+</div>
+<div class="badge">Private Launch</div>
+</header>
 
-        <div class="tier-hero">
-          Reserved for a small number of members who prefer college football without compromise.
-        </div>
+<div class="hero">
 
-        <p>
-          The Sovereign Saturday is a private concierge dedicated exclusively to
-          college football’s regular season, the College Football Playoff, and
-          the National Championship. Travel, access, seating, and execution—
-          orchestrated with absolute precision.
-        </p>
+<div class="limited">Invitation-Only College Football Concierge</div>
+<div class="scarcity">A Private Roster, Strictly Limited</div>
 
-        <div class="form-qualifier">
-          We work with a limited number of member families and corporate clients each season to ensure exceptional service.
-        </div>
+<h1>College Football,<br/>Handled at the Highest Level</h1>
 
-        <form class="cta-form" id="contact-form">
-          <input type="text" name="full_name" placeholder="Full Name" required />
-          <input type="email" name="email" placeholder="Private Email" required />
-          <input type="text" name="university" placeholder="Preferred University" />
-          <input type="text" name="city" placeholder="Primary Travel City" />
-          <textarea name="coverage" rows="3" placeholder="Are you exploring half-season coverage, full-season coverage, or postseason coverage this year?"></textarea>
-          <button type="submit">Request Private Invitation</button>
-        </form>
+<div class="tier-hero">
+Reserved for a small number of members who prefer college football without compromise.
+</div>
 
-        <div class="cta-note">
-          Limited memberships available for the upcoming season.
-        </div>
+<p>
+The Sovereign Saturday is a private concierge dedicated exclusively to
+college football’s regular season, the College Football Playoff,
+and the National Championship. Travel, access, seating,
+and execution — orchestrated with absolute precision.
+</p>
 
-        <script>
-        document.getElementById("contact-form").addEventListener("submit", function(e){
-          e.preventDefault();
-          const data = new FormData(this);
-          fetch("https://formspree.io/f/mgolyljj", {
-            method: "POST",
-            body: data,
-            headers: { "Accept": "application/json" }
-          });
-          window.location.href = "/success.html";
-        });
-        </script>
-      </div>
-    </div>
-  </section>
+<div class="form-qualifier">
+Membership consideration is limited each season.  
+If you are exploring whether Sovereign Saturday may be appropriate for your plans,
+submit a brief inquiry below.
+</div>
 
-  <div class="main">
-    <section class="section">
-      <h2>The Experience</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Regular Season Mastery</h3>
-          <p>
-            Iconic campuses, rivalry games, premium seating, private accommodations,
-            and seamless travel—executed weekend after weekend.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Playoff & Championship Access</h3>
-          <p>
-            The full College Football Playoff experience—on-campus first-round games, quarterfinals, semifinals, and the CFP National Championship—delivered with priority access, premium credentials, and flawless logistics.
-          </p>
-        </div>
-        <div class="card">
-          <h3>White-Glove Execution</h3>
-          <p>
-            From arrival to final whistle, every detail is managed discreetly so
-            your only responsibility is enjoying the game.
-          </p>
-        </div>
-      </div>
-    </section>
-  </div>
+<form class="cta-form" id="contact-form">
 
-  <footer>
-    <p><span>The Sovereign Saturday</span> • Private College Football Concierge • Founding Memberships Limited</p>
-  </footer>
+<input type="text" name="full_name" placeholder="Full Name" required />
+
+<input type="email" name="email" placeholder="Private Email" required />
+
+<input type="text" name="university" placeholder="Preferred University" />
+
+<input type="text" name="city" placeholder="Primary Travel City" />
+
+<textarea name="coverage" rows="3"
+placeholder="Are you exploring half-season coverage, full-season coverage, or postseason coverage this year?"></textarea>
+
+<button type="submit">Request Private Invitation</button>
+
+</form>
+
+<div class="cta-note">
+Limited memberships available for the upcoming season.
+</div>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+fbq('track','Lead');
+
+const data = new FormData(this);
+
+fetch("https://formspree.io/f/mgolyljj", {
+method: "POST",
+body: data,
+headers: { "Accept": "application/json" }
+});
+
+window.location.href = "/success.html";
+
+});
+</script>
+
+</div>
+</div>
+</section>
+
+<div class="main">
+
+<section class="section">
+
+<h2>Our Approach</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Concierge Philosophy</h3>
+<p>
+Sovereign Saturday was created for a small group of college football supporters who prefer the season handled properly.
+From rivalry weekends to the College Football Playoff, each engagement is planned with the discipline used by elite travel operators and private concierge firms.
+</p>
+</div>
+
+<div class="card">
+<h3>Operational Standards</h3>
+<p>
+The Sovereign Saturday maintains a deliberately limited roster each season in order to ensure exceptional execution.
+Game weekends are supported by a growing network of premium seating departments, hospitality partners, and travel providers across the country's most sought-after stadiums.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>The Experience</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Regular Season Mastery</h3>
+<p>
+Iconic campuses, rivalry games, premium seating, private accommodations,
+and seamless travel — executed weekend after weekend.
+</p>
+</div>
+
+<div class="card">
+<h3>Playoff & Championship Access</h3>
+<p>
+The full College Football Playoff experience — on-campus first-round games,
+quarterfinals, semifinals, and the CFP National Championship —
+delivered with priority access and flawless logistics.
+</p>
+</div>
+
+<div class="card">
+<h3>White-Glove Execution</h3>
+<p>
+From arrival to final whistle, every detail is managed discreetly
+so your only responsibility is enjoying the game.
+</p>
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+
+<p>
+<span>The Sovereign Saturday</span> • Private College Football Concierge • Founding Memberships Limited
+</p>
+
+</footer>
 
 </body>
 </html>
