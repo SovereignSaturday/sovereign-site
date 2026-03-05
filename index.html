@@ -136,9 +136,18 @@ font-weight: 300;
 
 .hero p {
 max-width: 760px;
-margin: 0 auto 1.6rem;
+margin: 0 auto 1.2rem;
 font-size: 1.2rem;
 color: #d1d5db;
+}
+
+/* Credibility line */
+.credibility {
+max-width: 760px;
+margin: 0 auto 1.8rem;
+font-size: 0.95rem;
+color: var(--muted);
+letter-spacing: 0.04em;
 }
 
 .form-qualifier {
@@ -284,6 +293,10 @@ and the National Championship. Travel, access, seating,
 and execution — orchestrated with absolute precision.
 </p>
 
+<div class="credibility">
+Coordinating premium access, travel, and game-day execution across the nation’s most sought-after college football stadiums each season.
+</div>
+
 <div class="form-qualifier">
 Membership consideration is limited each season.  
 If you are exploring whether Sovereign Saturday may be appropriate for your plans,
@@ -407,6 +420,29 @@ so your only responsibility is enjoying the game.
 </p>
 
 </footer>
+
+<!-- SCROLL TRACKING -->
+<script>
+let scroll50 = false;
+let scroll90 = false;
+
+window.addEventListener('scroll', function() {
+const scrollPosition = window.scrollY + window.innerHeight;
+const pageHeight = document.documentElement.scrollHeight;
+
+const scrollPercent = (scrollPosition / pageHeight) * 100;
+
+if (!scroll50 && scrollPercent >= 50) {
+scroll50 = true;
+fbq('trackCustom','Scroll50');
+}
+
+if (!scroll90 && scrollPercent >= 90) {
+scroll90 = true;
+fbq('trackCustom','Scroll90');
+}
+});
+</script>
 
 </body>
 </html>
